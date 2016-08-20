@@ -1,0 +1,58 @@
+
+public class NFLPlayer {
+	//Define the player stats fields
+	private String firstName;
+	private String lastName;
+	private String team;
+	private int age;
+	private int heightFeet;
+	private int heightInch;
+	private double TDS;
+	private double INT;
+	private double YDS;
+	private double RTG;	
+	//argument for player class
+	//Prints players stats
+	
+	public NFLPlayer(String string, String string2, String string3, int i, int j, int k, double l, double m, double n,
+			double d) {
+		firstName = string;
+		lastName = string2;
+		team = string3;
+		age = i; 
+		heightFeet = j; 
+		heightInch = k;
+		TDS = l;
+		INT = m;
+		YDS = n;
+		RTG = d;
+		
+		//print our individual player stats
+		System.out.printf(""
+				+ "Name: %s %s  "
+				+ "Team: %s  "
+				+ "Age: %d  "
+				+ "Height: %d ft. %d in.  "
+				+ "Touchdowns: %s  "
+				+ "Interceptions: %s  "
+				+ "Yards: %s  "
+				+ "RTG: %s\n", 
+				firstName, lastName, team, age, heightFeet, heightInch, TDS, INT, YDS, RTG);
+		
+	}
+
+
+	public static void main(String[] args){
+		NFLPlayer player1 = new NFLPlayer(
+				"Jimmy",
+				"Garoppolo",
+				"New England Patriots", 
+				24, 6, 2, 0, 0, 6, 39.6);
+		
+		NFLPlayer player2 = new NFLPlayer(
+				"Ryan",
+				"Abbott",
+				"New England Patriots", 
+				24, 6, 2, 0, 0, 6, 39.6);
+	}
+}

@@ -1,0 +1,9 @@
+
+public class playerStats {
+	//define player stats
+		public static void main(String[] args){
+			NFLPlayer player1 = new NFLPlayer("Jimmy","Garoppolo","New England Patriots", 24, 6, 2, 0, 0, 6, 39.6);
+			NFLPlayer player2 = new NFLPlayer("Ryan","Abbott","New England Patriots", 24, 6, 2, 0, 0, 6, 39.6);
+
+		}
+}

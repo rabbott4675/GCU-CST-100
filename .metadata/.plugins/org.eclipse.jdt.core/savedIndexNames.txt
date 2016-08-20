@@ -1,0 +1,4 @@
+INDEX VERSION 1.129+/Users/ryanabbott/Documents/GCU-CST-100/.metadata/.plugins/org.eclipse.jdt.core
+2416737256.index
+296566835.index
+4222252927.index
