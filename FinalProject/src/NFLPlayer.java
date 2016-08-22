@@ -7,11 +7,7 @@ public class NFLPlayer {
 	private int age;
 	private int weight;
 	private int heightFeet;
-	private int heightInch;
-	private double TDS;
-	private double INT;
-	private double YDS;
-	private double RTG;	
+	private int heightInch;	
 	//argument for player class
 	//Prints players stats
 	

@@ -138,3 +138,4 @@ java.net.ConnectException: Operation timed out
 
 2016-08-20 10:59:40,103 [Thread-8] ERROR org.eclipse.jgit.util.FS - xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.
 
+2016-08-21 10:03:33,570 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

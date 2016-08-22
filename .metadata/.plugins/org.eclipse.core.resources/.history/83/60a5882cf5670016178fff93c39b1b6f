@@ -1,0 +1,23 @@
+package chapterThree;
+
+import java.util.Scanner;
+public class ThreeTwelve {
+	public static void main(String[] strings) {
+		
+		//Create Scanner
+		Scanner input = new Scanner(System.in);
+		
+		int reverseNumber = 0, reverse = 0;
+		
+		System.out.print("Enter a three-digit integer: ");
+		int inputNumber = input.nextInt();
+		
+		while (inputNumber != 0){
+		reverse = reverse * 10;
+		reverse = reverse + inputNumber%10;
+		inputNumber = inputNumber/10;
+		}
+		
+		System.out.println(reverse);
+	}
+}

@@ -1,0 +1,11 @@
+package chapterThree;
+
+public class ThreeFour {
+	public static void main(String[] args){
+	
+		int randomMonth = (int) (Math.random() * 12) + 1;
+		
+		System.out.println(randomMonth);
+		
+	}
+}
