@@ -1,0 +1,32 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+
+public class HourConverter {
+
+	public static void main(String[] args) {
+
+		try{
+			
+			Scanner reader = new Scanner(System.in);
+			
+			String playerInput;
+			
+			System.out.println("Enter time in decimal ex(6.5) ");
+			playerInput = reader.nextLine();
+			
+			
+			
+			SimpleDateFormat df = new SimpleDateFormat("HH.mm");
+			  SimpleDateFormat dfout = new SimpleDateFormat("H.mm a");
+			  Date date  = df.parse(playerInput);
+			  System.out.println(dfout.format(date));
+			
+		} catch (Exception e){
+			e.printStackTrace();
+			}
+
+		}
+
+}

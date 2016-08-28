@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class TimeConversion {
+	
+	public static void main(String[] args) {
+
+		Scanner reader = new Scanner(System.in);
+		
+		String playerInput;
+		
+		System.out.println("Enter time in 24hr time: ");
+		playerInput= reader.toString();
+		
+		System.out.println("The time you entered is: " + playerInput);
+		
+		
+	}
+
+}

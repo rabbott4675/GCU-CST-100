@@ -8,9 +8,8 @@ public class NFLPlayer {
 	private int weight;
 	private int heightFeet;
 	private int heightInch;	
-	//argument for player class
-	//Prints players stats
 	
+	//Method for player class, prints players stats
 	public NFLPlayer(String string, String string2, String string3, int i, int j, int k, int e) {
 		firstName = string;
 		lastName = string2;
