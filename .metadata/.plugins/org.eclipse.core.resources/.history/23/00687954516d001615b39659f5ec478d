@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class FourTwo {
+
+	public static void main(String[] args) {
+//Create Scanner
+		
+		double averageRadius = 6371.01;
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter point 1 (latitude and longitude) in degrees:");
+		double xCordinents1 = input.nextDouble();
+		double yCordinents1 = input.nextDouble();
+		
+	
+		System.out.print("Enter point 2 (latitude and longitude) in degrees:");
+		double xCordinents2 = input.nextDouble();
+		double yCordinents2 = input.nextDouble();
+		
+		double distance = averageRadius * Math.acos(Math.sin(Math.toRadians(xCordinents1))*Math.sin(Math.toRadians(xCordinents2)) +
+														Math.cos(Math.toRadians(xCordinents1)) * Math.cos(Math.toRadians(xCordinents1)) *
+										Math.cos(Math.toRadians(yCordinents1 - yCordinents2)));
+		
+		
+		System.out.println("The distance between the two points is" + distance + "km");		
+	}
+
+}
