@@ -6,12 +6,22 @@ public class PlayerManager {
 		CreatePlayers();
 	}
 	
+	//Define the player stats fields
+	private String firstName;
+	private String lastName;
+	private String team;
+	private int age;
+	private int weight;
+	private int heightFeet;
+	private int heightInch;	
+	
 	///Create Players Method
 	public static void CreatePlayers(){
 		///Declaring Array
 		NFLPlayer [] playerArray;
+		
 		///Allocating memory for 12 players
-		playerArray = new NFLPlayer[12];
+		
 
 		//Name,lastname,team, age, weight, height feet, height inch
 		NFLPlayer player1 = new NFLPlayer(
@@ -87,20 +97,68 @@ public class PlayerManager {
 				24, 255, 6, 5);
 		
 		//Inizalizing Players
-		playerArray[0] = player1;
-		playerArray[1] = player2;
-		playerArray[2] = player3;
-		playerArray[3] = player4;
-		playerArray[4] = player5;
-		playerArray[5] = player6;
-		playerArray[6] = player7;
-		playerArray[7] = player8;
-		playerArray[8] = player9;
-		playerArray[9] = player10;
-		playerArray[10] = player11;
-		playerArray[11] = player12;
-
+		playerArray = new NFLPlayer[] {player1, player2, player3, player4, player5, player6, 
+									   player7, player8, player9, player10, player11, player12}; 
+		
 		}
+	
+	//Getter and Setter
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
+	public void setTeam(String team) {
+		this.team = team;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public int getWeight() {
+		return weight;
+	}
+
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+
+	public int getHeightFeet() {
+		return heightFeet;
+	}
+
+	public void setHeightFeet(int heightFeet) {
+		this.heightFeet = heightFeet;
+	}
+
+	public int getHeightInch() {
+		return heightInch;
+	}
+
+	public void setHeightInch(int heightInch) {
+		this.heightInch = heightInch;
+	}
+	
 		
 	}
 

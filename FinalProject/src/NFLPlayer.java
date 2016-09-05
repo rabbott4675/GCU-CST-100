@@ -1,13 +1,16 @@
 
 public class NFLPlayer {
-	//Define the player stats fields
-	private String firstName;
-	private String lastName;
-	private String team;
-	private int age;
-	private int weight;
-	private int heightFeet;
-	private int heightInch;	
+	
+	PlayerManager PM = new PlayerManager();
+		
+		public String firstName =  PM.getFirstName();
+		public String lastName = PM.getLastName();
+		public String team = PM.getLastName();
+		public int age = PM.getAge();
+		public int weight = PM.getWeight();
+		public int heightFeet = PM.getHeightFeet();
+		public int heightInch = PM.getHeightInch();
+		
 	
 	//Method for player class, prints players stats
 	public NFLPlayer(String string, String string2, String string3, int i, int j, int k, int e) {
@@ -15,9 +18,10 @@ public class NFLPlayer {
 		lastName = string2;
 		team = string3;
 		age = i; 
-		heightFeet = j; 
-		heightInch = k;
-		weight = e;
+		weight = j;
+		heightFeet = k; 
+		heightInch = e;
+		
 		
 		//print our individual player stats
 		System.out.printf(""
@@ -27,6 +31,7 @@ public class NFLPlayer {
 				+ "Weight: %d  "
 				+ "Height: %d ft. %d in. \n", 
 				firstName, lastName, team, age, weight, heightFeet, heightInch);
-	}
+		}
+	
 
 }
