@@ -1,7 +1,0 @@
-package ChapterSeven;
-
-public class sevenThirtyFive {
-	
-	public static void main (String[] arg) {}
-
-}

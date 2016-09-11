@@ -25,11 +25,11 @@ public class NFLPlayer {
 		
 		//print our individual player stats
 		System.out.printf(""
-				+ "Name: %s %s  "
-				+ "Team: %s  "
-				+ "Age: %d  "
-				+ "Weight: %d  "
-				+ "Height: %d ft. %d in. \n", 
+				+ "Name: %s %s     "
+				+ "Team: %s      "
+				+ "Age: %d      "
+				+ "Weight: %d      "
+				+ "Height: %d ft. %d in.     \n", 
 				firstName, lastName, team, age, weight, heightFeet, heightInch);
 		}
 	

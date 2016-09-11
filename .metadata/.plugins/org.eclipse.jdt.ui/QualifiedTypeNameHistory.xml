@@ -7,4 +7,6 @@
 <fullyQualifiedTypeName name="java.text.ParseException"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="toolkit.CheckingAccount"/>
+<fullyQualifiedTypeName name="toolkit.Account"/>
 </qualifiedTypeNameHistroy>
