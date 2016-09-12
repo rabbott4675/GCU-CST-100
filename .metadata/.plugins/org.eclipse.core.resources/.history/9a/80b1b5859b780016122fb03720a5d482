@@ -1,0 +1,30 @@
+public class OffensivePlayer extends NFLPlayer  {
+
+    private int numOfBlocks;
+    private int yards;
+    
+    
+    public OffensivePlayer(String firstName, String string2, String string3, int i, int j, int k, int e, int numOfBlocks, int yards) {
+        super(firstName, string2, string3, i, j, k, e);
+        this.numOfBlocks = numOfBlocks;
+        this.yards = yards;
+        //print our individual player stats
+		System.out.printf(""
+				+ "Name: %s %s     "
+				+ "Team: %s      "
+				+ "Age: %d      "
+				+ "Weight: %d      "
+				+ "Height: %d ft. %d in.     \n" 
+				+ "NumOfBlocks : %d \n" 
+				+ "Yards : %d \n",
+				firstName, lastName, team, age, weight, heightFeet, heightInch, numOfBlocks, yards);
+
+    }
+    
+    public int getNumOfBlocks() {
+        return this.numOfBlocks;
+    }
+    
+    //reminder to make the rest of your getters and setters
+    
+}

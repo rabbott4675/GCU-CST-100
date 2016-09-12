@@ -1,0 +1,12 @@
+
+public class DeffensivePlayers extends NFLPLayer  {
+
+	public static void CreatePlayers(){
+	
+	}
+
+	public void NFLPlayer() {
+		
+	}
+
+}
