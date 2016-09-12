@@ -1,5 +1,5 @@
 
-public class NFLPlayer {
+public abstract class NFLPLayer {
 	
 	PlayerManager PM = new PlayerManager();
 		
@@ -13,7 +13,7 @@ public class NFLPlayer {
 		
 	
 	//Method for player class, prints players stats
-	public NFLPlayer(String string, String string2, String string3, int i, int j, int k, int e) {
+	public void NFLPlayer(String string, String string2, String string3, int i, int j, int k, int e) {
 		firstName = string;
 		lastName = string2;
 		team = string3;
