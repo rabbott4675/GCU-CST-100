@@ -1,4 +1,5 @@
 
 public interface Celebrator {
-	void celebrate();
+
+	void celebrate(String firstName, String lastName);
 }

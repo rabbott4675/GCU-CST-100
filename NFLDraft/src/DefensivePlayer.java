@@ -16,10 +16,12 @@ public class DefensivePlayer extends NFLPlayer  {
       				+ "Weight: %d      "
       				+ "Height: %d ft. %d in.      " 
       				+ "Number of sacks : %d    " 
-      				+ "Yards ran : %d   "
-      				+ "%s %s %s \n",
-      				firstName, lastName, team, age, weight, heightFeet, heightInch, numOfSacks, yardsRan, firstName, lastName, message());
-          }
+      				+ "Yards ran : %d   ",
+      				firstName, lastName, team, age, weight, heightFeet, heightInch, numOfSacks, yardsRan);
+    		
+      		celebrate(firstName, lastName);
+          
+    }
   
     
     //Getter and Setter
@@ -38,5 +40,7 @@ public class DefensivePlayer extends NFLPlayer  {
     public void setYardsRan(int yardsRan) {
         this.numOfSacks = yardsRan;
     }
-    
+
+
+	
 }

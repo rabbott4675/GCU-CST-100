@@ -1,0 +1,24 @@
+package chapterTwo;
+import java.util.Scanner;
+
+public class TwoFive {
+		public static void main(String[] Strings) {
+
+			Scanner input = new Scanner(System.in);
+			
+			try{
+
+				//Code you want to write goes here, this code may throw an error if someone enters string. The error would be 
+				   System.out.print("Please enter a number");
+				   int number1 = input.nextInt();
+				   System.out.print("Please enter a second number");
+				   int number2 = input.nextInt();
+				   System.out.print(number1 * number2);
+
+				}catch(Exception e){
+					System.out.print("Please make sure you enter number");
+
+				}
+
+		}
+}

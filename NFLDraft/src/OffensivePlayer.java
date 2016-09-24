@@ -10,15 +10,16 @@ public class OffensivePlayer extends NFLPlayer  {
        
         //print our individual player stats
 		System.out.printf(""
-				+ "Name: %s %s     "
-				+ "Team: %s      "
-				+ "Age: %d      "
-				+ "Weight: %d      "
-				+ "Height: %d ft. %d in.     " 
+				+ "Name: %s %s   "
+				+ "Team: %s    "
+				+ "Age: %d    "
+				+ "Weight: %d    "
+				+ "Height: %d ft. %d in.   " 
 				+ "NumOfBlocks : %d   " 
-				+ "Yards : %d     "
-				+ "%s %s %s \n",
-				firstName, lastName, team, age, weight, heightFeet, heightInch, numOfBlocks, yards, firstName, lastName, message());
+				+ "Yards : %d   ",
+				firstName, lastName, team, age, weight, heightFeet, heightInch, numOfBlocks, yards);
+	
+		celebrate(firstName, lastName);
 		
     }
     
@@ -38,5 +39,7 @@ public class OffensivePlayer extends NFLPlayer  {
 	public void setYards(int yards) {
 		this.yards = yards;
 	}
+
+
         
 }
