@@ -1,0 +1,52 @@
+
+
+import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.control.ListView;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
+
+public class Main extends Application{
+	
+	private TableView table = new TableView();
+    public static void main(String[] args) {
+        launch(args);
+    }
+	
+    @Override
+   public void start(Stage primaryStage) throws Exception{
+        //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Group root = new Group();
+        
+        
+        ListView<String> list = new ListView<>();
+        ObservableList<String> items =FXCollections.observableArrayList (
+            "A", "B", "C", "D");
+        list.setItems(items);
+        
+        Text txt = new Text("Pass Players Name here");
+        root.getChildren().add(txt);
+        root.getChildren().add(list);
+        txt.setY(25);
+        txt.setX(25);
+     
+
+        primaryStage.setTitle("NFL DRAFT");
+        primaryStage.setScene(new Scene(root, 720, 480));
+        primaryStage.show();
+    	}
+    
+    		public Main() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+		
+
+
+
+	
+}

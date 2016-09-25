@@ -1,32 +1,46 @@
 
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.scene.Group;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TableView;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-
-public class Main extends Application, NFLPlayer {
-
+public class Main extends Application{
+	
+	
+	
     @Override
-    public void start(Stage primaryStage) throws Exception{
+   public void start(Stage primaryStage) throws Exception{
         //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         Group root = new Group();
         
-       
-        Text txt = new Text();
+        
+        ListView<String> list = new ListView<>();
+        ObservableList<String> items =FXCollections.observableArrayList (
+            "Name", "Team", "Weight", "Hight" );
+        list.setItems(items);
+        
+        Text txt = new Text("Pass Players Name here");
         root.getChildren().add(txt);
-        txt.setY(50);
-
+        txt.setY(25);
+        txt.setX(25);
+        
+        root.getChildren().add(list);
+        list.setPrefWidth(720);
+        list.setPrefHeight(480);
+        
+        
+        
         primaryStage.setTitle("NFL DRAFT");
         primaryStage.setScene(new Scene(root, 720, 480));
         primaryStage.show();
-    }
+    	}
+    
 
 
-    public static void main(String[] args) {
-        launch(args);
-    }
+	
 }

@@ -8,7 +8,7 @@ public class OffensivePlayer extends NFLPlayer  {
         this.numOfBlocks = numOfBlocks;
         this.yards = yards;
        
-        //print our individual player stats
+        //print out individual player stats
 		System.out.printf(""
 				+ "Name: %s %s   "
 				+ "Team: %s    "
@@ -38,6 +38,14 @@ public class OffensivePlayer extends NFLPlayer  {
 
 	public void setYards(int yards) {
 		this.yards = yards;
+	}
+
+	public static int size() {
+		return 0;
+	}
+
+	public static char[] get(int i) {
+		return null;
 	}
 
 

@@ -2,6 +2,11 @@ import java.util.ArrayList;
 
 public class PlayerManager  {
 
+	public class offensivePlayerList {
+
+	}
+
+
 	///Create main method
 	public static void main(String[] args){
 		CreatePlayers();
